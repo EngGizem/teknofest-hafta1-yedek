@@ -20,3 +20,4 @@ def test_chat_placeholder_response():
 def test_chat_requires_message_field():
     response = client.post("/chat", json={})
     assert response.status_code == 422
+    
