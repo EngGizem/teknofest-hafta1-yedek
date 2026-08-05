@@ -20,4 +20,3 @@ def health_check():
 @app.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
     return ChatResponse(reply=f"(placeholder) Mesajınızı aldım: {request.message}")
-    
